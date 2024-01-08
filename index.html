@@ -15,8 +15,8 @@
 <body>
     <div class="container vh-100 py-5">
         <div class="row">
-            <h1 class="text-center text-uppercase">calcola il prezzo del tuo biglietto</h1>
-            <div class="container my-4">
+            <h1 class="text-center text-uppercase text-white">calcola il prezzo del tuo biglietto</h1>
+            <div class="container my-4 bg-white rounded-3 py-4 px-5">
                 <div class="row flex-nowrap">
                     <div class="col-4 mb-3">
                         <label for="name" class="form-label">Nome e Cognome</label>
@@ -41,9 +41,44 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="row">
-            <h2>Titolo</h2>
-        </div> -->
+        <div id="ticket" class="row d-none">
+            <h1 class="text-center text-uppercase text-white">il tuo biglietto</h1>
+            <div class="container my-4 bg-white rounded-3 py-4 px-5">
+                <h3 class="text-uppercase">dettagli passeggero</h3>
+                <div class="card mb-3 border-end-0 border-start-0 rounded-0">
+                    <div class="row g-0">
+                      <div class="col-4 bg-secondary">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase">nome passeggero</h4>
+                            <h5 id="passengerName" class="text-capitalize"></h5>
+                          </div>
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Offerta</th>
+                                    <th scope="col">Carrozza</th>
+                                    <th scope="col">Codice CP</th>
+                                    <th scope="col">Costo biglietto</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td id="offer"></td>
+                                    <td id="carriage"></td>
+                                    <td id="cpCode"></td>
+                                    <td id="priceOnTicket"></td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
